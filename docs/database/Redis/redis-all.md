@@ -695,7 +695,10 @@ Cache Aside Pattern 中遇到写请求是这样的：更新 DB，然后直接删
 1. **缓存失效时间变短（不推荐，治标不治本）** ：我们让缓存数据的过期时间变短，这样的话缓存就会从数据库中加载数据。另外，这种解决办法对于先操作缓存后操作数据库的场景不适用。
 2. **增加cache更新重试机制（常用）**： 如果 cache 服务当前不可用导致缓存删除失败的话，我们就隔一段时间进行重试，重试次数可以自己定。如果多次重试还是失败的话，我们可以把当前更新失败的 key 存入队列中，等缓存服务可用之后，再将 缓存中对应的 key 删除即可。
 
-### 19. 参考
+### 19. redis 集群方案
+1. [Codis作者黄东旭：细说分布式Redis架构设计和那些踩过的坑](https://www.open-open.com/lib/view/open1456801289625.html)
+
+### 20. 参考
 
 * 《Redis 开发与运维》
 * 《Redis 设计与实现》
@@ -703,7 +706,7 @@ Cache Aside Pattern 中遇到写请求是这样的：更新 DB，然后直接删
 * 通俗易懂的 Redis 数据结构基础教程：[https://juejin.im/post/5b53ee7e5188251aaa2d2e16](https://juejin.im/post/5b53ee7e5188251aaa2d2e16)
 * WHY Redis choose single thread (vs multi threads): [https://medium.com/@jychen7/sharing-redis-single-thread-vs-multi-threads-5870bd44d153](https://medium.com/@jychen7/sharing-redis-single-thread-vs-multi-threads-5870bd44d153)
 
-### 20. 公众号
+### 21. 公众号
 
 如果大家想要实时关注我更新的文章以及分享的干货的话，可以关注我的公众号。
 
