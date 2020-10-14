@@ -697,6 +697,7 @@ Cache Aside Pattern 中遇到写请求是这样的：更新 DB，然后直接删
 2. **增加cache更新重试机制（常用）**： 如果 cache 服务当前不可用导致缓存删除失败的话，我们就隔一段时间进行重试，重试次数可以自己定。如果多次重试还是失败的话，我们可以把当前更新失败的 key 存入队列中，等缓存服务可用之后，再将 缓存中对应的 key 删除即可。
 
 ### 19. redis 集群方案
+1. [redis 集群之 Codis](https://www.cnblogs.com/wuwuyong/p/11774679.html)
 1. [Codis作者黄东旭：细说分布式Redis架构设计和那些踩过的坑](https://www.open-open.com/lib/view/open1456801289625.html)
 
 ### 20. 参考
