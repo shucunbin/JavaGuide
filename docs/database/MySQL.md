@@ -52,6 +52,7 @@
 **MySQL5.7新特性及相关优化技巧：** [MySQL5.7版本新特性](https://www.imooc.com/learn/533)　　[性能优化之MySQL优化](https://www.imooc.com/learn/194)
 
 [MySQL集群（PXC）入门](https://www.imooc.com/learn/993)　　[MyCAT入门及应用](https://www.imooc.com/learn/951)
+[mysql docker 安装](https://hub.docker.com/_/mysql/)
 
 ## 常见问题总结
 
