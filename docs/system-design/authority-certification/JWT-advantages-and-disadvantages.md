@@ -90,4 +90,5 @@ JWT 最适合的场景是不需要服务端保存用户状态的场景，比如�
 - https://medium.com/devgorilla/how-to-log-out-when-using-jwt-a8c7823e8a6
 - https://medium.com/@agungsantoso/csrf-protection-with-json-web-tokens-83e0f2fcbcc
 - [Invalidating JSON Web Tokens](https://stackoverflow.com/questions/21978658/invalidating-json-web-tokens)
+- [简单5步，理解JWT](https://juejin.im/entry/6844903686787825677)
 
